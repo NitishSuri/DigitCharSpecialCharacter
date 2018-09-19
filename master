@@ -1,0 +1,20 @@
+# DigitCharSpecialCharacter
+30th program on c
+#include<conio.h>
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	clrscr();
+	char ch;
+	printf("Enter any character:");
+	scanf("%c",&ch);
+	if(isdigit(ch))
+		printf("Digit");
+	else if(isalpha(ch))
+		printf("Character");
+	else
+		printf("Special character");
+getch();
+return 0;
+}
